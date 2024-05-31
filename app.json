@@ -9,7 +9,11 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+    "androidStatusBar": {
+      "backgroundColor": "#C2185B",
+      "translucent": false
+      }
     },
     "ios": {
       "supportsTablet": true
@@ -23,5 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
+    
   }
 }
