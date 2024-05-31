@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useAsyncStorage } from './useAsyncStorage';
 
-// Crear el contexto
+
 export const TodoContext = React.createContext();
 
-// Proveedor del contexto
 export const TodoProvider = ({ children }) => {
   const { item: todos, saveItem: setTodos, loading, error } = useAsyncStorage('todos', []);
   const [searchValue, setSearchValue] = useState('');

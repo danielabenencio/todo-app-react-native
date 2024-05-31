@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     shadowRadius: 50,
     borderRadius: 10,
     paddingVertical: 12,
-    backgroundColor: 'rgba(250, 250, 250, 1)', // Initial background color
+    backgroundColor: 'rgba(250, 250, 250, 1)',
   },
   text: {
     marginVertical: 24,
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     height: 48,
     width: 48,
     borderRadius: 25,
-    backgroundColor: 'rgba(250, 250, 250, 1)', // Initial background color
+    backgroundColor: 'rgba(250, 250, 250, 1)', 
   },
   deleteIcon: {
     position: 'absolute',
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     height: 48,
     width: 48,
     borderRadius: 25,
-    backgroundColor: 'rgba(250, 250, 250, 1)', // Initial background color
+    backgroundColor: 'rgba(250, 250, 250, 1)',
   },
 });
 
