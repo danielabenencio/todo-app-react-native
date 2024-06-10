@@ -26,7 +26,7 @@ const TodoScreen = () => {
 
   if (loading) {
     return (
-      <View >
+      <View style={[styles.container, styles.centered]}>
         <TodosLoading />
         <TodosLoading />
         <TodosLoading />
@@ -36,15 +36,15 @@ const TodoScreen = () => {
 
   if (error) {
     return (
-      <View >
+      <View style={[styles.container, styles.centered]}>
         <Text>Error loading todos.</Text>
       </View>
     );
   }
 
   return (
-    <View >
-      <View >
+    <View style={styles.container}>
+      <View style={styles.appHeader}>
         <TodoCounter />
         <TodoSearch />
         <TodoList>
