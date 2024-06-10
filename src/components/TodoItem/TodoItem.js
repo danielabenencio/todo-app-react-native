@@ -21,12 +21,13 @@ const styles = StyleSheet.create({
   },
   TodoItemText: {
     marginHorizontal: 24,
-    marginBottom: 24,
+    marginBottom: 15,
+    marginTop: 15,
     width: '70%',
     fontSize: 18,
     lineHeight: 24,
     fontWeight: '400',
-    alignContent: "center,"
+    textAlign: 'left'
   },
   TodoItemTextComplete: {
     textDecorationLine: 'line-through',

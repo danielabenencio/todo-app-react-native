@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { TodoContext } from "../TodoContext/index.js";
 import TodoCounter from "../components/TodoCounter/index.js";
 import TodoSearch from "../components/TodoSearch/index.js";
@@ -10,7 +10,7 @@ import CreateTodoButton from "../components/CreateTodoButton/index.js";
 import Modal from "../Modal";
 import TodoForm from "../components/TodoForm/index.js";
 import TodoList from "../components/TodoList/index.js";
-import styles from "./styles";
+
 
 const TodoScreen = () => {
   const {
@@ -26,7 +26,7 @@ const TodoScreen = () => {
 
   if (loading) {
     return (
-      <View style={[styles.container, styles.centered]}>
+      <View >
         <TodosLoading />
         <TodosLoading />
         <TodosLoading />
@@ -36,15 +36,15 @@ const TodoScreen = () => {
 
   if (error) {
     return (
-      <View style={[styles.container, styles.centered]}>
+      <View >
         <Text>Error loading todos.</Text>
       </View>
     );
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.appHeader}>
+    <View >
+      <View >
         <TodoCounter />
         <TodoSearch />
         <TodoList>

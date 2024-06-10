@@ -2,12 +2,20 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   iconContainer: {
+    
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 10,
+    width: 30,
+    height: 30,
   },
   completedIcon: {
+    position: 'absolute',
     color: 'green',
+    justifyContent: 'center',
+    width: 30,
+    height:30,
+    
   },
   iconContainerDelete: {
     position: "absolute",

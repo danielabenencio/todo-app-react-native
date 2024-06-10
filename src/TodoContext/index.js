@@ -32,12 +32,18 @@ export const TodoProvider = ({ children }) => {
       )
     : todos;
 
+
+    const completedTodos = todos ? todos.filter((todo) => todo.completed).length : 0;
+    const totalTodos = todos ? todos.length : 0;
+
   return (
     <TodoContext.Provider
       value={{
         loading,
         error,
         todos,
+        completedTodos,
+        totalTodos,
         searchValue,
         setSearchValue,
         searchedTodos,
